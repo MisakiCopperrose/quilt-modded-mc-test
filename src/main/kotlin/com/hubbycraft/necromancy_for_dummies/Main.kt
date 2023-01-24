@@ -10,5 +10,9 @@ object Main : ModInitializer {
 
     override fun onInitialize(mod: ModContainer) {
         LOGGER.info("Hello Quilt world from {}!", mod.metadata()?.name())
+
+        TestRegisterer.registerBlocks()
+        TestRegisterer.registerItems()
+        TestRegisterer.registerTools()
     }
 }
