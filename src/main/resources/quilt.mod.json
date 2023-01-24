@@ -3,7 +3,7 @@
 	"quilt_loader": {
 		"group": "com.hubbyCraft",
 		"id": "necromancy_for_dummies",
-		"version": "${version}",
+		"version": "${Alpha_1.0.0.0}",
 		"metadata": {
 			"name": "Necromancy For Dummies",
 			"description": "Necromancy For Dummies is a mod which focuses on necromancy... for dummies",
@@ -16,7 +16,7 @@
 				"issues": "https://github.com/QuiltMC/quilt-kotlin-template-mod/issues",
 				"sources": "https://github.com/QuiltMC/quilt-kotlin-template-mod"
 			},
-			"icon": "assets/necromancy_for_dummies/icon.png"
+			"icon": "assets/example_mod/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
@@ -44,5 +44,5 @@
 			}
 		]
 	},
-	"mixin": "necromancy_for_dummies.mixins.json"
+	"mixin": "necromancy_for_dummies.json"
 }
