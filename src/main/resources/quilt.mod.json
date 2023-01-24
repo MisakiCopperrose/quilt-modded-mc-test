@@ -1,8 +1,8 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "com.hubbycraft",
+		"id": "necromancy_for_dummies",
 		"version": "${version}",
 		"metadata": {
 			"name": "Mod Name",
@@ -21,7 +21,7 @@
 		"entrypoints": {
 			"init": {
 				"adapter": "kotlin",
-				"value": "com.example.example_mod.ExampleMod"
+				"value": "com.hubbycraft.necromancy_for_dummies.Main"
 			}
 		},
 		"depends": [
@@ -43,5 +43,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "necromancy_for_dummies.mixins.json"
 }
