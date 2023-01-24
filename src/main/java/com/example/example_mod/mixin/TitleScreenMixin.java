@@ -1,7 +1,7 @@
-package com.hubbyCraft.necromancy_for_dummies.mixin;
+package com.example.example_mod.mixin;
 
-import com.hubbyCraft.necromancy_for_dummies.NecromancyForDummies;
 import net.minecraft.client.gui.screen.TitleScreen;
+import com.example.example_mod.ExampleMod;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class TitleScreenMixin {
 	@Inject(method = "init", at = @At("TAIL"))
 	public void exampleMod$onInit(CallbackInfo ci) {
-		NecromancyForDummies.INSTANCE.getLOGGER().info("This line is printed by an example mod mixin!");
+		ExampleMod.INSTANCE.getLOGGER().info("This line is printed by an example mod mixin!");
 	}
 }

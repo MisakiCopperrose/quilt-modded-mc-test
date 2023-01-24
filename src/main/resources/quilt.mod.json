@@ -1,15 +1,14 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.hubbyCraft",
-		"id": "necromancy_for_dummies",
-		"version": "${Alpha_1.0.0.0}",
+		"group": "com.example",
+		"id": "example_mod",
+		"version": "${version}",
 		"metadata": {
-			"name": "Necromancy For Dummies",
-			"description": "Necromancy For Dummies is a mod which focuses on necromancy... for dummies",
+			"name": "Mod Name",
+			"description": "A short description of your mod.",
 			"contributors": {
-				"Justin": "Head Idea Bullshitter",
-				"Winand": "Lead Programmer"
+				"Your name here": "Owner"
 			},
 			"contact": {
 				"homepage": "https://example.com/",
@@ -22,7 +21,7 @@
 		"entrypoints": {
 			"init": {
 				"adapter": "kotlin",
-				"value": "com.hubbyCraft.necromancy_for_dummies"
+				"value": "com.example.example_mod.ExampleMod"
 			}
 		},
 		"depends": [
@@ -44,5 +43,5 @@
 			}
 		]
 	},
-	"mixin": "necromancy_for_dummies.json"
+	"mixin": "example_mod.mixins.json"
 }
