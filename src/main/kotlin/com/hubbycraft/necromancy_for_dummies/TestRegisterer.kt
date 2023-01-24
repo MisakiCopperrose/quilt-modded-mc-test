@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier
 
 object TestRegisterer {
     private val testBlock = TestBlock()
+    private val testItem = TestItem()
 
     fun registerBlocks() {
         Registry.register(
@@ -22,6 +23,12 @@ object TestRegisterer {
             Registries.ITEM,
             Identifier("test","test_block"),
             BlockItem(testBlock, Item.Settings())
+        )
+
+        Registry.register(
+            Registries.ITEM,
+            Identifier("test", "test_tool"),
+            testItem
         )
     }
 
