@@ -10,7 +10,7 @@ import net.minecraft.util.math.Direction
 import net.minecraft.world.event.GameEvent
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings
 
-class TestItem : Item(QuiltItemSettings()) {
+class   DeathStaff : Item(QuiltItemSettings()) {
     override fun useOnBlock(context: ItemUsageContext): ActionResult {
         val world = context.world
 
