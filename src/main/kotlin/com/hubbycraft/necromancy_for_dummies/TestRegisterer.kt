@@ -10,6 +10,7 @@ object TestRegisterer {
     private val testBlock = TestBlock()
     private val deathStaff = DeathStaff()
     private val deathStaffv2 = DeathStaffv2()
+    private val zombieStaff = ZombieStaff()
 
     fun registerBlocks() {
         Registry.register(
@@ -36,6 +37,12 @@ object TestRegisterer {
             Registries.ITEM,
             Identifier("nfd", "deathstaffv2"),
             deathStaffv2
+        )
+
+        Registry.register(
+            Registries.ITEM,
+            Identifier("nfd", "zombiestaff"),
+            zombieStaff
         )
     }
 
