@@ -8,12 +8,14 @@ import net.minecraft.util.Identifier
 
 object TestRegisterer {
     private val testBlock = TestBlock()
-    private val testItem = TestItem()
+    private val deathStaff = DeathStaff()
+    private val deathStaffv2 = DeathStaffv2()
+    private val zombieStaff = ZombieStaff()
 
     fun registerBlocks() {
         Registry.register(
             Registries.BLOCK,
-            Identifier("test","test_block"),
+            Identifier("nfd","test_block"),
             testBlock
         )
     }
@@ -21,14 +23,26 @@ object TestRegisterer {
     fun registerItems() {
         Registry.register(
             Registries.ITEM,
-            Identifier("test","test_block"),
+            Identifier("nfd","test_block"),
             BlockItem(testBlock, Item.Settings())
         )
 
         Registry.register(
             Registries.ITEM,
-            Identifier("test", "test_tool"),
-            testItem
+            Identifier("nfd", "deathstaff"),
+            deathStaff
+        )
+
+        Registry.register(
+            Registries.ITEM,
+            Identifier("nfd", "deathstaffv2"),
+            deathStaffv2
+        )
+
+        Registry.register(
+            Registries.ITEM,
+            Identifier("nfd", "zombiestaff"),
+            zombieStaff
         )
     }
 

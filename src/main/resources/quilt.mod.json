@@ -5,10 +5,12 @@
 		"id": "necromancy_for_dummies",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
+			"name": "Necromancy For Dummies",
 			"description": "A short description of your mod.",
 			"contributors": {
-				"Your name here": "Owner"
+				"Justin": "Owner",
+				"Winand": "Lead Developer",
+				"Nacny": "Lead artist"
 			},
 			"contact": {
 				"homepage": "https://example.com/",

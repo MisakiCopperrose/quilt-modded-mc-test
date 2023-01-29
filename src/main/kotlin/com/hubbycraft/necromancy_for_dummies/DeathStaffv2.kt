@@ -10,7 +10,7 @@ import net.minecraft.util.math.Direction
 import net.minecraft.world.event.GameEvent
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings
 
-class TestItem : Item(QuiltItemSettings()) {
+class   DeathStaffv2 : Item(QuiltItemSettings()) {
     override fun useOnBlock(context: ItemUsageContext): ActionResult {
         val world = context.world
 
@@ -24,7 +24,7 @@ class TestItem : Item(QuiltItemSettings()) {
                 blockPos = blockPos.offset(context.side)
             }
 
-            EntityType.SKELETON.spawnFromItemStack(
+            EntityType.SKELETON_HORSE.spawnFromItemStack(
                 world,
                 context.stack,
                 player,

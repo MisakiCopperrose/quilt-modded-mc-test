@@ -15,7 +15,6 @@ import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings
 
 class TestBlock : Block(QuiltBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()) {
 
-    @Override
     @Deprecated("", ReplaceWith("ActionResult.SUCCESS", "net.minecraft.util.ActionResult"))
     override fun onUse(
         state: BlockState,
