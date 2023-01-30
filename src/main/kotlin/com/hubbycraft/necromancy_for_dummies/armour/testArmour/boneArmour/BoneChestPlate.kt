@@ -1,4 +1,4 @@
 package com.hubbycraft.necromancy_for_dummies.armour.testArmour.boneArmour
 
-class bonePants {
+class BoneChestPlate {
 }

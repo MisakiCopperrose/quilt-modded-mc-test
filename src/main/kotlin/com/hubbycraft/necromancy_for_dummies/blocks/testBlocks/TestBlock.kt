@@ -1,4 +1,4 @@
-package com.hubbycraft.necromancy_for_dummies.blocks
+package com.hubbycraft.necromancy_for_dummies.blocks.testBlocks
 
 import net.minecraft.block.Block
 import net.minecraft.block.BlockState

@@ -1,4 +1,4 @@
-package com.hubbycraft.necromancy_for_dummies.testItems
+package com.hubbycraft.necromancy_for_dummies.items.testItems.staffs
 
 import net.minecraft.entity.EntityType
 import net.minecraft.entity.SpawnReason
@@ -10,7 +10,7 @@ import net.minecraft.util.math.Direction
 import net.minecraft.world.event.GameEvent
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings
 
-class   ZombieStaff : Item(QuiltItemSettings()) {
+class ZombieStaff : Item(QuiltItemSettings()) {
     override fun useOnBlock(context: ItemUsageContext): ActionResult {
         val world = context.world
 

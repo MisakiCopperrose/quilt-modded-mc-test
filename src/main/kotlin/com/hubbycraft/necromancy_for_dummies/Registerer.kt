@@ -1,9 +1,9 @@
 package com.hubbycraft.necromancy_for_dummies
 
-import com.hubbycraft.necromancy_for_dummies.blocks.TestBlock
-import com.hubbycraft.necromancy_for_dummies.testItems.DeathStaff
-import com.hubbycraft.necromancy_for_dummies.testItems.DeathStaffv2
-import com.hubbycraft.necromancy_for_dummies.testItems.ZombieStaff
+import com.hubbycraft.necromancy_for_dummies.blocks.testBlocks.TestBlock
+import com.hubbycraft.necromancy_for_dummies.items.testItems.staffs.DeathStaff
+import com.hubbycraft.necromancy_for_dummies.items.testItems.staffs.DeathStaffV2
+import com.hubbycraft.necromancy_for_dummies.items.testItems.staffs.ZombieStaff
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.registry.Registries
@@ -13,13 +13,13 @@ import net.minecraft.util.Identifier
 object Registerer {
     private val testBlock = TestBlock()
     private val deathStaff = DeathStaff()
-    private val deathStaffv2 = DeathStaffv2()
+    private val deathStaffv2 = DeathStaffV2()
     private val zombieStaff = ZombieStaff()
 
     fun registerBlocks() {
         Registry.register(
             Registries.BLOCK,
-            Identifier("nfd","test_block"),
+            Identifier("nfd", "test_block"),
             testBlock
         )
     }
@@ -27,7 +27,7 @@ object Registerer {
     fun registerItems() {
         Registry.register(
             Registries.ITEM,
-            Identifier("nfd","test_block"),
+            Identifier("nfd", "test_block"),
             BlockItem(testBlock, Item.Settings())
         )
 
