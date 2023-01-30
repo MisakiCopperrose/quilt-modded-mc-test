@@ -4,6 +4,7 @@ import net.minecraft.entity.EntityType
 import net.minecraft.entity.SpawnReason
 import net.minecraft.item.Item
 import net.minecraft.item.ItemUsageContext
+import net.minecraft.item.Items
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.util.ActionResult
 import net.minecraft.util.math.Direction
@@ -24,7 +25,8 @@ class DeathStaff : Item(QuiltItemSettings()) {
                 blockPos = blockPos.offset(context.side)
             }
 
-            EntityType.SKELETON.spawnFromItemStack(
+            // grab and save reference
+            val skeletonEntity = EntityType.SKELETON.spawnFromItemStack(
                 world,
                 context.stack,
                 player,
@@ -33,6 +35,8 @@ class DeathStaff : Item(QuiltItemSettings()) {
                 true,
                 context.side == Direction.UP
             )
+            // use reference to equip armor
+            skeletonEntity?.tryEquip(Items.DIAMOND_HELMET.defaultStack)
 
             world.emitGameEvent(player, GameEvent.ENTITY_PLACE, blockPos)
 
