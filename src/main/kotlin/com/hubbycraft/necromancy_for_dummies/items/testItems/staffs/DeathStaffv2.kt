@@ -1,4 +1,4 @@
-package com.hubbycraft.necromancy_for_dummies
+package com.hubbycraft.necromancy_for_dummies.testItems
 
 import net.minecraft.entity.EntityType
 import net.minecraft.entity.SpawnReason
@@ -10,7 +10,7 @@ import net.minecraft.util.math.Direction
 import net.minecraft.world.event.GameEvent
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings
 
-class   ZombieStaff : Item(QuiltItemSettings()) {
+class   DeathStaffv2 : Item(QuiltItemSettings()) {
     override fun useOnBlock(context: ItemUsageContext): ActionResult {
         val world = context.world
 
@@ -24,7 +24,7 @@ class   ZombieStaff : Item(QuiltItemSettings()) {
                 blockPos = blockPos.offset(context.side)
             }
 
-            EntityType.ZOMBIE.spawnFromItemStack(
+            EntityType.SKELETON_HORSE.spawnFromItemStack(
                 world,
                 context.stack,
                 player,

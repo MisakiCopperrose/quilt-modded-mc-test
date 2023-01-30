@@ -1,4 +1,4 @@
-package com.hubbycraft.necromancy_for_dummies
+package com.hubbycraft.necromancy_for_dummies.testItems
 
 import net.minecraft.entity.EntityType
 import net.minecraft.entity.SpawnReason
